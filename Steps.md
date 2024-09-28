@@ -5,9 +5,11 @@ Step 1: Set Up Your S3 Bucket
 Create s3 bucket: /*mansi-bucket-githubaction*/
 Enable static website hosting : index.html
 Add bucket policy:
+
+
 {
-  "Version": "2012-10-17",
-  "Statement": [
+___"Version": "2012-10-17",
+___"Statement": [
     {
       "Sid": "PublicReadGetObject",
       "Effect": "Allow",
@@ -27,6 +29,8 @@ Step 3: Create GitHub Actions Workflow
 
 create a .github/workflows directory and add deploy.yml file
 ---------------------------------------------------------
+
+
 name: Deploy Static Website
 
 on:
