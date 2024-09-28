@@ -1,4 +1,6 @@
-**Deploying a static website using GitHub Actions and an S3 bucket**
+                                                                                                                                                                   
+                                                                                                                                                                   
+                                                                                                                                                        **Deploying a static website using GitHub Actions and an S3 bucket**
 
 Step 1: Set Up Your S3 Bucket
 
@@ -6,7 +8,9 @@ Create s3 bucket: /*mansi-bucket-githubaction*/
 Enable static website hosting : index.html
 Add bucket policy:
 
------------------------------------------------
+
+```yml
+
 {
 ___"Version": "2012-10-17",
 ___"Statement": [
@@ -19,7 +23,8 @@ ___"Statement": [
     }
   ]
 }
--------------------------------------------------
+
+```
 
 
 Step 2: Configure AWS Credentials
@@ -31,7 +36,7 @@ Step 3: Create GitHub Actions Workflow
 
 create a .github/workflows directory and add deploy.yml file
 
----------------------------------------------------------
+```yml
 name: Deploy Static Website
 
 on:
@@ -57,7 +62,7 @@ jobs:
     - name: Sync files to S3
       run:
         aws s3 sync . s3://YOUR_BUCKET_NAME --delete
--------------------------------------------------------------------------
+```
 
 The file will automatically deploy your site on s3 bucket.
 Check your website is running or not by copying the link provided in the bucket properties.
