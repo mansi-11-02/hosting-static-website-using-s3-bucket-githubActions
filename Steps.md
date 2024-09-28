@@ -6,7 +6,7 @@ Create s3 bucket: /*mansi-bucket-githubaction*/
 Enable static website hosting : index.html
 Add bucket policy:
 
-
+-----------------------------------------------
 {
 ___"Version": "2012-10-17",
 ___"Statement": [
@@ -19,6 +19,8 @@ ___"Statement": [
     }
   ]
 }
+-------------------------------------------------
+
 
 Step 2: Configure AWS Credentials
 
@@ -28,9 +30,8 @@ Add Secrets to GitHub: AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
 Step 3: Create GitHub Actions Workflow
 
 create a .github/workflows directory and add deploy.yml file
+
 ---------------------------------------------------------
-
-
 name: Deploy Static Website
 
 on:
