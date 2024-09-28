@@ -1,7 +1,6 @@
-                                                                                                                                                                   
-                                                                                                                                                                   
-                                                                                                                                                        **Deploying a static website using GitHub Actions and an S3 bucket**
-
+**#Deploy a static website using githubactions and s3 bucket#**                                                                                                                                                                  
+                                                                                                                                                                  
+                                                                                                                                                        **Deploying awus
 Step 1: Set Up Your S3 Bucket
 
 Create s3 bucket: /*mansi-bucket-githubaction*/
