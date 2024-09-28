@@ -64,4 +64,7 @@ jobs:
 The file will automatically deploy your site on s3 bucket.
 Check your website is running or not by copying the link provided in the bucket properties.
 
+![image](https://github.com/user-attachments/assets/7f38105a-4369-42a9-a043-408daf748d20)
+
+
 
